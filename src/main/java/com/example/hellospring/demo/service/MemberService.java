@@ -2,6 +2,7 @@ package com.example.hellospring.demo.service;
 
 import com.example.hellospring.demo.domain.Member;
 import com.example.hellospring.demo.repository.MemberRepository;
+import com.example.hellospring.demo.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
