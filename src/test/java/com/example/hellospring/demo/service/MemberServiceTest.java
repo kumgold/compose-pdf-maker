@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MemberServiceTest {
     private final MemoryMemberRepository repository = new MemoryMemberRepository();
     private final MemberService memberService = new MemberService(repository);
-    
+
     @AfterEach
     void afterEach() {
         repository.clear();
