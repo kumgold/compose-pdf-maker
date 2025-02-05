@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PDF Maker"
+rootProject.name = "PdfMaker"
 include(":app")
  
