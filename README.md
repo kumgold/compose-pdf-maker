@@ -1,3 +1,67 @@
+<<<<<<< HEAD
+# Compose PDF Maker
+
+You can create a screen implemented with Android Compose into a single PDF file.
+It supports both horizontal and vertical scrolling, and is stored in external public storage.
+
+| APP                                  | LOC                                  | PDF                                  |
+|--------------------------------------|--------------------------------------|--------------------------------------|
+| <img src="./images/screenshot1.png"> | <img src="./images/screenshot2.png"> | <img src="./images/screenshot3.png"> |
+
+## Implementation
+
+Please update jitpack maven repository in your project build.gradle
+
+```
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+## How to use
+
+It is simple to use. Please wrap the screen you want to convert to a PDF file with a PdfScanner block.
+And please click the PDF Icon button. Then created your PDF file.
+User's input is also converted to PDF like captured screen.
+
+```
+@Composable
+fun SamplePage() {
+    val isChecked = remember { mutableStateOf(false) }
+
+    // Just Use PdfScanner only
+    PdfScanner {
+        // Write your code here like this
+        // ...
+        Column {
+            Checkbox(
+                checked = isChecked.value,
+                onCheckedChange = {
+                    isChecked.value = it
+                }
+            )
+            SampleText()
+            SampleText()
+            SampleText()
+        }
+    }
+}
+```
+
+## Parameters
+
+| name                                         | description                                                                                                                                     |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| fileName: String                             | You can enter the file name.<br>It is optional value. If you don't use, the PDF file title is "test.pdf"                                        |
+| pdfHeight: Int                               | You can specify height values to implement multiple page PDF files.<br>It is optional value. If you don't use, just generate one page PDF file. |
+| onClickSave: () -> Unit                      | After clicking the Create PDF file button, you can add the necessary actions.<br>It is optional value.                                          |
+| dropDownActionButton: @Composable () -> Unit | You can add action buttons in PdfScanner Appbar<br>It is optional value.                                                                        |
+| content: @Composable () -> Unit              | Screen or Content for PDF File Generation. Must be declared.                                                                                    |
+=======
 ## License
 
 ```
@@ -23,3 +87,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+>>>>>>> 85c6841bd6a39d22aa557235f666e96d6754c2ad
