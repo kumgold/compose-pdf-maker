@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Compose PDF Maker
 
 You can create a screen implemented with Android Compose into a single PDF file.
@@ -61,7 +60,7 @@ fun SamplePage() {
 | onClickSave: () -> Unit                      | After clicking the Create PDF file button, you can add the necessary actions.<br>It is optional value.                                          |
 | dropDownActionButton: @Composable () -> Unit | You can add action buttons in PdfScanner Appbar<br>It is optional value.                                                                        |
 | content: @Composable () -> Unit              | Screen or Content for PDF File Generation. Must be declared.                                                                                    |
-=======
+
 ## License
 
 ```
@@ -87,4 +86,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
->>>>>>> 85c6841bd6a39d22aa557235f666e96d6754c2ad
