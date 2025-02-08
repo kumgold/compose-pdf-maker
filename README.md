@@ -20,6 +20,11 @@ dependencyResolutionManagement {
     }
 }
 ```
+latest version :<br>
+```
+com.github.kumgold:compose-pdf-maker:1.0.0
+```
+
 
 ## How to use
 
