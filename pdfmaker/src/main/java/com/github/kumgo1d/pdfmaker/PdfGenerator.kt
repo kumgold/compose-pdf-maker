@@ -1,4 +1,4 @@
-package com.github.kumgo1d.pdfmaker.pdf
+package com.github.kumgo1d.pdfmaker
 
 import android.graphics.pdf.PdfDocument
 import android.os.Environment

@@ -1,4 +1,4 @@
-package com.github.kumgo1d.pdfmaker.pdf
+package com.github.kumgo1d.pdfmaker
 
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Box
