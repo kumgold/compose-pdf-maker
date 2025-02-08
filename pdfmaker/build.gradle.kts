@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.kumgold"
-version = "0.0.1"
+version = "0.0.3"
 
 android {
     namespace = "com.github.kumgo1d.pdfmaker"
@@ -72,7 +72,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.kumgold"
                 artifactId = "pdf-maker"
-                version = "0.0.1"
+                version = "0.0.3"
             }
         }
     }
